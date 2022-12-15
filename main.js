@@ -30,8 +30,11 @@ map.addControl(
   "top-left"
 );
 document.querySelector(".mapboxgl-control-container").remove();
+function placeNewPoint() {
+  document
+    .querySelector("#titleScreen")
+    .classList.add("titleScreen-transition");
 
-button.addEventListener("click", function (e) {
   // Génère des coordonnées géographiques au hasard
   var lat = Math.random() * 180 - 90; // Nombre aléatoire entre -90 et 90
   var lng = Math.random() * 360 - 180; // Nombre aléatoire entre -180 et 180
@@ -48,9 +51,5 @@ button.addEventListener("click", function (e) {
     essential: true, // this animation is considered essential with respect to prefers-reduced-motion
     zoom: 9,
   });
-
-  // Ajoute un pop-up contenant du texte au marqueur
-  // var popup = new mapboxgl.Popup()
-  //   .setHTML("<p>Point géographique au hasard</p>")
-  //   .addTo(marker);
-});
+}
+button.addEventListener("click", placeNewPoint);

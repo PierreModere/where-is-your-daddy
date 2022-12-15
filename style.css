@@ -105,6 +105,12 @@ button:focus-visible {
   top: 0;
   left: 0;
   z-index: 16;
+  transition: transform 1.4s ease;
+}
+
+.titleScreen-transition {
+  transition: transform 1.4s ease;
+  transform: translateY(-100%);
 }
 
 #map {
