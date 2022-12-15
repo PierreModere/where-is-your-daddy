@@ -2,12 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Where is my daddy ?</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div id="mainScreen">
+        <div id="map"></div>
+        <div id="popup">
+          <p>Point géographique au hasard</p>
+          <button id="close-button">Fermer</button>
+        </div>
+      </div>
+      <div id="titleScreen">
+        <button id="random-button">
+          Générer un point géographique au hasard
+        </button>
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
