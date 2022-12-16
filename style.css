@@ -109,6 +109,18 @@ body {
   text-align: center;
 }
 
+.titleScreen__title__underline {
+  position: relative;
+}
+
+.titleScreen__title__underline::after {
+  content: url(/underline.svg);
+  position: absolute;
+  bottom: -0.2em;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+}
+
 .titleScreen__text {
   width: min(480px, 100%);
   margin: 0 0 64px;
