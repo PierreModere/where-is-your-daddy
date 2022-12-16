@@ -190,7 +190,7 @@ body {
 }
 
 .marker {
-  background-image: url('marker.svg');
+  background-image: url(/marker.svg);
   background-size: cover;
   width: min(32px, 100%);
   height: min(38px, 100%);
