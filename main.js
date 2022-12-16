@@ -4,7 +4,7 @@ import mapboxgl from "mapbox-gl"; // Récupère l'élément HTML représentant l
 document
   .getElementById("random-button")
   .addEventListener("click", placeNewPoint);
-document.querySelector(".btn__reload").addEventListener("click", () => {
+document.querySelector(".btn--reload").addEventListener("click", () => {
   window.location.reload();
 });
 
