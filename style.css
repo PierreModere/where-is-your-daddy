@@ -34,9 +34,11 @@ body {
 .btn {
   all: unset;
   border: solid 1px var(--text-color);
+  border-radius: 32px;
+  padding: 0.2em 1em;
+  cursor: pointer;
 }
-
-.btn-bottom-right {
+.btn__reload {
   position: fixed;
   bottom: 1em;
   right: 1em;
@@ -48,7 +50,7 @@ body {
 /******************************/
 
 #titleScreen {
-  background-image: url(/bg.png);
+  background-image: url(/bg.svg);
   background-size: cover;
   background-position: center center;
   position: absolute;
@@ -118,4 +120,17 @@ body {
 #map {
   width: 100vw;
   height: 100vh;
+}
+
+.mapboxgl-ctrl-attrib-inner,
+.mapboxgl-ctrl-bottom-left {
+  display: none;
+}
+
+.marker {
+  background-image: url("marker.svg");
+  background-size: cover;
+  width: min(32px, 100%);
+  height: min(38px, 100%);
+  cursor: pointer;
 }
