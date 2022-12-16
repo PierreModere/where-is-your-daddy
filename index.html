@@ -7,6 +7,10 @@
       href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Where is my daddy ?</title>
   </head>
@@ -18,14 +22,21 @@
           <p class="titleScreen__text">
             Daddy is gone for too long? The drugstore can’t be that far away?
             You and your siblings can’t remember the last time you’ve seen your
-            dad for christmas? Don’t worry, we got you !
+            dad for christmas?
+            <br /><br />
+            Don’t worry, we got you !
           </p>
-          <button class="btn" id="random-button">Find my daddy</button>
+          <button class="btn" id="random-button">
+            <span class="btn__label">Find my daddy</span>
+          </button>
         </div>
       </div>
       <div id="slidingScreen"></div>
       <div id="mainScreen">
-        <button class="btn btn__reload" type="button">Reload</button>
+        <button class="btn btn--reload" type="button">
+          <span class="btn__label">Reload</span>
+          <span class="btn__icon material-symbols-outlined"> refresh </span>
+        </button>
         <div id="map"></div>
         <!-- <div id="popup">
           <p>Point géographique au hasard</p>
