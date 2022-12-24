@@ -1,6 +1,8 @@
 import "./style.css";
 import mapboxgl from "mapbox-gl"; // Récupère l'élément HTML représentant le bouton
 
+var isPopUpShowed = false;
+
 document
   .getElementById("random-button")
   .addEventListener("click", placeNewPoint);
@@ -65,4 +67,12 @@ function getLayerType(x, y) {
     });
     return displayFeat;
   });
+}
+
+function showPopUp() {
+  if (!isPopUpShowed) {
+    document
+      .querySelector(".pop-up__container")
+      .classList.add("pop-up__container--show");
+  }
 }
