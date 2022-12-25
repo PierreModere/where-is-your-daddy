@@ -202,9 +202,9 @@ body {
   opacity: 0;
   transition: opacity 0.5s ease;
   border: solid 2px var(--background-color);
-  border-radius: 1em;
+  border-radius: 1.8em;
 
-  padding: 48px, 40px, 48px, 40px;
+  padding: 48em, 40px, 48px, 40px;
   gap: 25px;
   background-color: var(--text-color);
   color: black;
