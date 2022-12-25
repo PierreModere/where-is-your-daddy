@@ -40,14 +40,23 @@
           <span class="btn__label">Reload</span>
           <span class="btn__icon material-symbols-outlined"> refresh </span>
         </button>
-        <div class="pop-up__container" style="display: none">
+        <div class="pop-up__container">
           <p class="pop-up__text">
-            Daddy is gone for too long? The drugstore can’t be that far away?
-            You and your siblings can’t remember the last time you’ve seen your
-            dad for christmas?
+            Your <strong>daddy's at :</strong> <br /><br />
+            <span class="pop-up__adress"></span>
             <br /><br />
-            Don’t worry, we got you !
+            Since the <span class="pop-up__date"></span>
           </p>
+          <a
+            class="pop-up__link"
+            href="https://twitter.com/intent/tweet?text=J'ai%20retrouvé%20mon%20daron%20grâce%20à%20ce%20superbe%20site%20&url=https%3A%2F%2Fwhere-is-your-daddy.netlify.app/"
+            target="_blank"
+          >
+            <button class="btn pop-up__btn" id="random-button">
+              <span class="btn__label">Share on twitter</span>
+              <span class="btn__icon material-symbols-outlined"> share </span>
+            </button>
+          </a>
         </div>
         <div id="map"></div>
       </div>
